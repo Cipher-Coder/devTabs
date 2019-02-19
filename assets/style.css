@@ -142,3 +142,10 @@ span.text-muted {
 .float-left.text-gray a {
   color: #3987ec;
 }
+
+#clock {
+  border: solid blue 1px;
+  max-width: 700px;
+  display: inline-block;
+  text-align: center;
+}
