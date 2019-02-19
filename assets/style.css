@@ -134,3 +134,7 @@ h2.f4.text-normal.mb-3 {
 span.text-muted {
   color: rgb(240, 61, 61);
 }
+
+.text-gray {
+  color: #5bd75b;
+}
