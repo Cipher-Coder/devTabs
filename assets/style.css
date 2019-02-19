@@ -1,5 +1,5 @@
 html {
-  background-color: black;
+  background-color: #252730;
 }
 
 /* Github Calendar */
@@ -147,4 +147,29 @@ span.text-muted {
   max-width: 700px;
   display: inline-block;
   text-align: center;
+}
+
+img.favicons {
+  padding-right: 6px;
+}
+
+li a:link {
+  color: #6272a4;
+}
+
+li a:visited {
+  color: #6272a4;
+}
+
+li a:hover {
+  transition: all 0.2s ease-in;
+  color: #f1fa8c;
+}
+
+ul {
+  list-style: none;
+}
+
+.repo-name a {
+  color: #84dccf;
 }
