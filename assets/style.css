@@ -138,3 +138,7 @@ span.text-muted {
 .text-gray {
   color: #5bd75b;
 }
+
+.float-left.text-gray a {
+  color: #3987ec;
+}
