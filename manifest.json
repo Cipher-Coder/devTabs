@@ -1,4 +1,9 @@
 {
+  "applications": {
+    "gecko": {
+      "id": "devTabs@example.com"
+    }
+  },
   "manifest_version": 2,
   "name": "devTabs",
   "description": "new tab page geared towards developers",
