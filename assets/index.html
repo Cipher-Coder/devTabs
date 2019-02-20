@@ -61,14 +61,20 @@
       <li><img class="favicons" src="https://www.google.com/s2/favicons?domain=https://www.linkedin.com/feed"><a href="https://www.linkedin.com/feed">LinkedIn</a></li>
     </ul>
   </div>
-  <div class="fl w-20">
-    <h3 class="f3 tc light-blue">Reddit / WebDev</h3>
+  <div id="dev-to" class="fl w-20">
+    <h3 class="f3 tc light-blue">Dev.to</h3>
+    <iframe id="dev-to-frame" width="100%" height="800" frameborder="0" class="tc" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fdev.to%2Ffeed&mode=html&showonly=&maxitems=0&showdescs=1&desctrim=200&descmax=0&tabwidth=100%25&utf8=1&linktarget=_self&textsize=smaller&bordercol=%23252730&headbgcol=%23252730&headtxtcol=%231ca0dd&titlebgcol=%23252730&titletxtcol=%23f1fa8c&itembgcol=%23252730&itemtxtcol=%23ffffff&ctl=0"></iframe>
   </div>
   <div class="fl w-50">
     <h3 class="f3 tc light-blue">GitHub Calendar</h3>
     <div class="calendar"></div>
     <div class="clock-container pt6 tc">
     <div id="clock" class="blue tc f1 pa3"></div>
+    <div class="weather-container pt3">
+      <p class="light-blue f4">City: <span id="city" class="orange i"></span></p>
+      <p class="light-blue f4">Temperature: <span id="temp" class="orange i"></span>Humidity: <span id="humidity" class="orange i"></span></p>
+      <p class="light-blue f4">Wind Speed: <span id="wind" class="orange i"></span>Clouds: <span id="sky" class="orange i"></span></p>
+    </div>
     </div>
   </div>
   <div class="fl w-20">

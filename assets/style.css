@@ -188,3 +188,16 @@ ul {
   transition: all 0.2s ease-in;
   border-left: solid greenyellow 3px;
 }
+
+#dev-to {
+  overflow: hidden;
+}
+
+iframe {
+  width: 105%;
+  overflow: auto;
+}
+
+iframe::-webkit-scrollbar {
+  display: none;
+}

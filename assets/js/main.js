@@ -10,6 +10,8 @@ GithubFeed.init({
   }
 });
 
+// Start of Clock and Calendar
+
 let tday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 let tmonth = [
   "January",
@@ -74,4 +76,50 @@ function GetClock() {
 }
 
 GetClock();
+
 setInterval(GetClock, 1000);
+
+// Start of Weather Widget
+
+const apiKey = "de86474ef2fa9963ad1c2292b7b89082";
+let cityEl = document.getElementById("city");
+let currTempEl = document.getElementById("temp");
+let humidityEl = document.getElementById("humidity");
+let windEl = document.getElementById("wind");
+let skyEl = document.getElementById("sky");
+
+let lat = 35.398775;
+let lon = -84.346465;
+
+function findWeather() {
+  let searchLink =
+    "https://api.openweathermap.org/data/2.5/weather?lat=" +
+    lat +
+    "&lon=" +
+    lon +
+    "&appid=" +
+    apiKey +
+    "&units=imperial";
+  httpRequestAsync(searchLink, theResponse);
+}
+
+function theResponse(response) {
+  let jsonObject = JSON.parse(response);
+  cityEl.innerHTML = jsonObject.name;
+  currTempEl.innerHTML = parseInt(jsonObject.main.temp) + "° ";
+  humidityEl.innerHTML = jsonObject.main.humidity + "%";
+  windEl.innerHTML = jsonObject.wind.speed + "mph ";
+  skyEl.innerHTML = jsonObject.clouds.all + "%";
+}
+
+function httpRequestAsync(url, callback) {
+  console.log("hello");
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.onreadystatechange = () => {
+    if (httpRequest.readyState == 4 && httpRequest.status == 200)
+      callback(httpRequest.responseText);
+  };
+  httpRequest.open("GET", url, true);
+  httpRequest.send();
+}
+findWeather();
