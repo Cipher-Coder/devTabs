@@ -10,15 +10,7 @@ GithubFeed.init({
   }
 });
 
-let tday = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
+let tday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 let tmonth = [
   "January",
   "February",

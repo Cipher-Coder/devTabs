@@ -1,5 +1,6 @@
 html {
   background-color: #252730;
+  font-family: "Inconsolata", monospace;
 }
 
 /* Github Calendar */
@@ -143,7 +144,6 @@ span.text-muted {
 }
 
 #clock {
-  border: solid blue 1px;
   max-width: 700px;
   display: inline-block;
   text-align: center;
@@ -171,5 +171,20 @@ ul {
 }
 
 .repo-name a {
-  color: #84dccf;
+  color: #f1fa8c;
+}
+
+.repo-name a:hover {
+  transition: all 0.2s ease-in;
+  color: greenyellow;
+}
+
+.repo-container {
+  border-left: solid #6272a4 3px;
+  padding-bottom: 30px;
+}
+
+.repo-container:hover {
+  transition: all 0.2s ease-in;
+  border-left: solid greenyellow 3px;
 }

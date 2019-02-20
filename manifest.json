@@ -18,5 +18,5 @@
   "chrome_url_overrides": {
     "newtab": "assets/index.html"
   },
-  "content_security_policy": "script-src 'self' https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js; object-src 'self'"
 }
