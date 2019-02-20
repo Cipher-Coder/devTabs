@@ -33,3 +33,7 @@ Pretty self explanatory. Just a clock and calendar. You can change some of the o
 ### RSS
 
 This too gave me a bit of trouble and I am going to have to do some more research on it. I wanted to just pull data in from an API and display articles from Product Hunt or what I have, [Dev.to](https://dev.to). But I could not, at this point, figure out how to do that. So instead pulled an RSS feed from [dev.to](https://dev.to) and had to put it in an iframe, which is less than ideal. But it is doing the job for now. Once I get more comfortable with API's, I will change this too. But for now, I used [RSS Dog](https://www.rssdog.com) to take a RSS Feed and package it up into an iframe. This is a free service and was really simple and worked perfect. I styled the iframe to match the page and actually had to get funky with the CSS in order to hide the scroll bar on it but still leave the scrolling functionality as I wanted to be able to scroll all the pertinent articles.
+
+### Weather
+
+Lastly, I put some weather on the page. I used the [Open Weather Map API](https://openweathermap.org). They offer free API keys and I would ask that you get your own so I can continue to use mine. If you live somewhere that used metric or something other than imperial units, you can change how the data comes in by changing the end of the API call from imperial to what ever you may want. It is all commented in the main.js file.
