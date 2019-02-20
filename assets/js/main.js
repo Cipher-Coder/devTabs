@@ -1,9 +1,9 @@
-new GitHubCalendar(".calendar", "Cipher-Coder", { responsive: true });
+new GitHubCalendar(".calendar", "Cipher-Coder", { responsive: true }); // Change user-name to yours so your feed will show up
 
 GithubFeed.init({
-  username: "Cipher-Coder",
+  username: "Cipher-Coder", // Change this user-name to yours so your feed shows up
   container: "#github-feeds",
-  count: 8,
+  count: 8, //How many repos you want to show
   order: "desc",
   onComplete: function() {
     console.log("Feed Loaded");
@@ -81,14 +81,14 @@ setInterval(GetClock, 1000);
 
 // Start of Weather Widget
 
-const apiKey = "de86474ef2fa9963ad1c2292b7b89082";
+const apiKey = "de86474ef2fa9963ad1c2292b7b89082"; //Please change to your own API key. They are free.
 let cityEl = document.getElementById("city");
 let currTempEl = document.getElementById("temp");
 let humidityEl = document.getElementById("humidity");
 let windEl = document.getElementById("wind");
 let skyEl = document.getElementById("sky");
 
-let lat = 35.398775;
+let lat = 35.398775; //Location you want your weather for.
 let lon = -84.346465;
 
 function findWeather() {
@@ -99,17 +99,17 @@ function findWeather() {
     lon +
     "&appid=" +
     apiKey +
-    "&units=imperial";
+    "&units=imperial"; // Change this to metric or leave as imperial if in the US
   httpRequestAsync(searchLink, theResponse);
 }
 
 function theResponse(response) {
   let jsonObject = JSON.parse(response);
-  cityEl.innerHTML = jsonObject.name;
-  currTempEl.innerHTML = parseInt(jsonObject.main.temp) + "° ";
-  humidityEl.innerHTML = jsonObject.main.humidity + "%";
-  windEl.innerHTML = jsonObject.wind.speed + "mph ";
-  skyEl.innerHTML = jsonObject.clouds.all + "%";
+  cityEl.innerHTML = jsonObject.name; // Location
+  currTempEl.innerHTML = parseInt(jsonObject.main.temp) + "° "; //Temperature
+  humidityEl.innerHTML = jsonObject.main.humidity + "%"; // Humidity
+  windEl.innerHTML = jsonObject.wind.speed + "mph "; // Wind Speed
+  skyEl.innerHTML = jsonObject.clouds.all + "%"; // Cloud Cover %
 }
 
 function httpRequestAsync(url, callback) {
@@ -122,4 +122,4 @@ function httpRequestAsync(url, callback) {
   httpRequest.open("GET", url, true);
   httpRequest.send();
 }
-findWeather();
+findWeather(); //Initiate the function
