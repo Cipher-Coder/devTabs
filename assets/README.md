@@ -37,3 +37,7 @@ This too gave me a bit of trouble and I am going to have to do some more researc
 ### Weather
 
 Lastly, I put some weather on the page. I used the [Open Weather Map API](https://openweathermap.org). They offer free API keys and I would ask that you get your own so I can continue to use mine. If you live somewhere that used metric or something other than imperial units, you can change how the data comes in by changing the end of the API call from imperial to what ever you may want. It is all commented in the main.js file.
+
+## Here is a screenshot so you can see how it looks:
+
+![screenshot of extension](/img/screenshot.PNG)
