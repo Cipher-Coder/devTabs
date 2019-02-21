@@ -63,8 +63,7 @@ function GetClock() {
     ndate +
     ", " +
     nyear +
-    " " +
-    "<br/>" +
+    "  " +
     nhour +
     ":" +
     nmin +
@@ -72,7 +71,8 @@ function GetClock() {
     nsec +
     ap +
     "";
-  document.getElementById("clock").innerHTML = clocktext;
+
+  document.getElementById("clock").textContent = clocktext;
 }
 
 GetClock();
@@ -105,11 +105,11 @@ function findWeather() {
 
 function theResponse(response) {
   let jsonObject = JSON.parse(response);
-  cityEl.innerHTML = jsonObject.name; // Location
-  currTempEl.innerHTML = parseInt(jsonObject.main.temp) + "° "; //Temperature
-  humidityEl.innerHTML = jsonObject.main.humidity + "%"; // Humidity
-  windEl.innerHTML = jsonObject.wind.speed + "mph "; // Wind Speed
-  skyEl.innerHTML = jsonObject.clouds.all + "%"; // Cloud Cover %
+  cityEl.textContent = jsonObject.name; // Location
+  currTempEl.textContent = parseInt(jsonObject.main.temp) + "° "; //Temperature
+  humidityEl.textContent = jsonObject.main.humidity + "%"; // Humidity
+  windEl.textContent = jsonObject.wind.speed + "mph "; // Wind Speed
+  skyEl.textContent = jsonObject.clouds.all + "%"; // Cloud Cover %
 }
 
 function httpRequestAsync(url, callback) {
