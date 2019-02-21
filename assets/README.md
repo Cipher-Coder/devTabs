@@ -40,6 +40,6 @@ Lastly, I put some weather on the page. I used the [Open Weather Map API](https:
 
 ## Here is a screenshot so you can see how it looks:
 
-<p>
-  <img src="assets/img/screenshot2.png">
+<p align="center">
+  <img src="/assets/img/screenshot2.png" alt="screenshot" />
 </p>
