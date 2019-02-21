@@ -19,7 +19,14 @@
     "default_popup": "assets/popup/popup.html",
     "browser_style": true
   },
-  "permissions": ["activeTab", "webRequest", "webRequestBlocking", "storage"],
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
   "chrome_settings_overrides": {
     "homepage": "assets/index.html"
   },

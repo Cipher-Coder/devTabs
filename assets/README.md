@@ -41,5 +41,5 @@ Lastly, I put some weather on the page. I used the [Open Weather Map API](https:
 ## Here is a screenshot so you can see how it looks:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Cipher-Coder/devTabs/master/assets/img/screenshot.png" alt="screenshot" />
+  <img src="assets/img/screenshot.png" alt="screenshot" />
 </p>
