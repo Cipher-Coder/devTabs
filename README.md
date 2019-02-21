@@ -40,4 +40,4 @@ Lastly, I put some weather on the page. I used the [Open Weather Map API](https:
 
 ## Here is a screenshot so you can see how it looks:
 
-![screenshot of extension](assets/img/screenshot.PNG)
+![screenshot of extension](/img/screenshot.PNG)
