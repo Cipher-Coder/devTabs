@@ -105,6 +105,16 @@ html {
   height: 26px;
 }
 
+#main {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
 .left.text-muted {
   float: left;
   margin-left: 9px;
@@ -181,7 +191,7 @@ ul {
 
 .repo-container {
   border-left: solid #6272a4 3px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .repo-container:hover {
@@ -190,14 +200,45 @@ ul {
 }
 
 #dev-to {
-  overflow: hidden;
-}
-
-iframe {
-  width: 105%;
+  float: left;
   overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 20%;
 }
 
-iframe::-webkit-scrollbar {
+#dev-to::-webkit-scrollbar {
   display: none;
+}
+
+#options {
+  -webkit-filter: brightness(70%);
+  -moz-filter: brightness(70%);
+  -o-filter: brightness(70%);
+  -ms-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+#options:hover {
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+#devStart a:hover {
+  color: greenyellow;
+}
+
+#devStart a {
+  color: #f1fa8c;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+#devStart p {
+  color: white;
 }

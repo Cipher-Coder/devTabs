@@ -3,7 +3,7 @@ new GitHubCalendar(".calendar", "Cipher-Coder", { responsive: true }); // Change
 GithubFeed.init({
   username: "Cipher-Coder", // Change this user-name to yours so your feed shows up
   container: "#github-feeds",
-  count: 8, //How many repos you want to show
+  count: 10, //How many repos you want to show
   order: "desc",
   onComplete: function() {
     console.log("Feed Loaded");
@@ -123,3 +123,41 @@ function httpRequestAsync(url, callback) {
   httpRequest.send();
 }
 findWeather(); //Initiate the function
+
+const app = document.getElementById("devStart");
+
+const container = document.createElement("div");
+container.setAttribute("class", "container");
+
+app.appendChild(container);
+
+let request = new XMLHttpRequest();
+request.open("GET", "https://dev.to/api/articles", true);
+request.send();
+request.onload = function() {
+  let data = JSON.parse(this.response);
+  if (request.status != 200) {
+    console.log("Error", request.statusText);
+  } else {
+    data.forEach(article => {
+      const card = document.createElement("div");
+      card.setAttribute("class", "card");
+      const a = document.createElement("a");
+      a.href = article.url;
+      a.textContent = article.title;
+      const p = document.createElement("p");
+      article.description = article.description.substring(0, 300);
+      p.textContent = `${article.description}...`;
+      const img = document.createElement("img");
+      img.src = article.cover_image;
+
+      container.appendChild(card);
+      card.appendChild(a);
+      card.appendChild(p);
+      card.appendChild(img);
+    });
+  }
+};
+request.onerror = function() {
+  console.log("request failed");
+};
