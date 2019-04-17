@@ -14,8 +14,8 @@
 *.sln
 *.sw*
 
-#ignore my pinegrow file
-pinegrow.json
+#ignore the zip
+*.zip
 
 
 # Any IDE'settings
