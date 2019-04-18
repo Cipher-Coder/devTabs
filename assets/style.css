@@ -258,3 +258,9 @@ ul {
 #bookmarkLinks::-webkit-scrollbar {
   display: none;
 }
+
+.card {
+  padding-bottom: 5px;
+  border-bottom: solid 1px #6272a4;
+  margin-top: 30px;
+}

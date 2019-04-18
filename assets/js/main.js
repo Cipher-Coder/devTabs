@@ -150,6 +150,7 @@ request.onload = function() {
       p.textContent = `${article.description}...`;
       const img = document.createElement("img");
       img.src = article.cover_image;
+      img.alt = "";
 
       container.appendChild(card);
       card.appendChild(a);
