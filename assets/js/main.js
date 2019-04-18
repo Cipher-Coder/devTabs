@@ -12,7 +12,15 @@ GithubFeed.init({
 
 // Start of Clock and Calendar
 
-let tday = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+let tday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
 let tmonth = [
   "January",
   "February",
@@ -43,7 +51,7 @@ function GetClock() {
     ap = " AM";
     nhour = 12;
   } else if (nhour < 12) {
-    ap = " PM";
+    ap = " AM";
   } else if (nhour == 12) {
     ap = " PM";
   } else if (nhour > 12) {
