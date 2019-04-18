@@ -2,8 +2,6 @@
 
 ## Firefox extension for New Tab geared towards my Dev Work
 
-- I have never made any kind of extension and am still learning. This was my first attempt to build something useful for my browser
-
 This extension uses [Tachyons CSS](https://tachyons.io)
 
 ### Github Calendar
@@ -26,13 +24,13 @@ I also wanted a way to have easy access to my top Github repositories. So I foun
 
 I also wanted some of my most used bookmarks on the page. I made a small column down the side and had to hand code every link as I did not know how to set it up from the GUI to manually add them. Again, I am just learning. I will be looking into this more and once I figure it out I will integrate a way to just have maybe a simple form input that automatically finds the bookmark icon and pins it to the screen. But for now, to change the bookmarks that show up, you will have to manually go into the index.html file and change them by hand.
 
-### Time and Calendar
+### Time and Date
 
-Pretty self explanatory. Just a clock and calendar. You can change some of the options if you want to. I have to change the weekday to just abbreviations so it did not feed down to the next line as I wanted the font a bit bigger. But you can change that back.
+Pretty self explanatory. Just a clock with the date. You can change some of the options if you want to. I had to change the weekday to just abbreviations so it did not feed down to the next line as I wanted the font a bit bigger. But you can change that back.
 
-### RSS
+### Dev.to
 
-This too gave me a bit of trouble and I am going to have to do some more research on it. I wanted to just pull data in from an API and display articles from Product Hunt or what I have, [Dev.to](https://dev.to). But I could not, at this point, figure out how to do that. So instead pulled an RSS feed from [dev.to](https://dev.to) and had to put it in an iframe, which is less than ideal. But it is doing the job for now. Once I get more comfortable with API's, I will change this too. But for now, I used [RSS Dog](https://www.rssdog.com) to take a RSS Feed and package it up into an iframe. This is a free service and was really simple and worked perfect. I styled the iframe to match the page and actually had to get funky with the CSS in order to hide the scroll bar on it but still leave the scrolling functionality as I wanted to be able to scroll all the pertinent articles.
+This is now hooked up to the [dev.to](https://dev.to) API. I have been slowly tweeking the CSS to make it better. At first the 'card' elements were bleeding together, so I tried to give it some spacing. I also added and 'border-bottom' to break it up a bit. I had to figure out a way to not display the broken-link image for stories that did not had a img src. But just adding an alt="" attribute took care of it. 
 
 ### Weather
 
