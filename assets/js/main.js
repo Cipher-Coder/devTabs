@@ -121,7 +121,6 @@ function theResponse(response) {
 }
 
 function httpRequestAsync(url, callback) {
-  console.log("hello");
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = () => {
     if (httpRequest.readyState == 4 && httpRequest.status == 200)
