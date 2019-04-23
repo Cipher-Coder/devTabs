@@ -139,7 +139,12 @@ container.setAttribute("class", "container");
 app.appendChild(container);
 
 let request = new XMLHttpRequest();
-request.open("GET", "https://dev.to/api/articles?ciphercoder", true);
+let d = new Date();
+request.open(
+  "GET",
+  "https://dev.to/api/articles?ciphercoder&" + d.getTime(),
+  true
+);
 request.send();
 request.onload = function() {
   let data = JSON.parse(this.response);
