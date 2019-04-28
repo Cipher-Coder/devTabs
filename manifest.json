@@ -7,7 +7,8 @@
   "manifest_version": 2,
   "name": "devtabs",
   "description": "new tab page geared towards developers",
-  "version": "1.4.3",
+  "version": "1.4.4",
+  "homepage_url": "https://github.com/Cipher-Coder/devTabs",
   "icons": {
     "128": "assets/img/devTabs-128x128.png",
     "48": "assets/img/devTabs-48x48.png",
