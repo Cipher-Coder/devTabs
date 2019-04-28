@@ -202,6 +202,20 @@ ul {
   border-left: solid greenyellow 3px;
 }
 
+#gitFeed {
+  float: left;
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 20%;
+}
+
+#gitFeed::-webkit-scrollbar {
+  display: none;
+}
+
 #dev-to {
   float: left;
   overflow: auto;
