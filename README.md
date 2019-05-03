@@ -18,7 +18,7 @@ new GitHubCalendar(".calendar", "Cipher-Coder", { responsive: true }); //Just ch
 
 ### Github Feed
 
-I also wanted a way to have easy access to my top Github repositories. So I found a another library appropriately called: [GithubFeed](https://github.com/samwx/GithubFeed) from samwx. This too has really simple integration and is documented very well. The only problem I had was something with the content security policy was blocking the page from hitting the CDN link so I just copied the file off the CDN and put it in my 'js' directory so it was a local file and I had no problems with it after that. To change it so your repo's show up you would have to go into the main.js file and at line 4 you will see my user-name. Just change it to yours and your feed will begin to show up. There are some options there to that you can change.
+I also wanted a way to have easy access to my top Github repositories. So I found a another library appropriately called: [GithubFeed](https://github.com/samwx/GithubFeed) from samwx. This too has really simple integration and is documented very well. To change it so your repo's show up you would have to go into the main.js file and at line 4 you will see my user-name. Just change it to yours and your feed will begin to show up. There are some options there to that you can change.
 
 ### Bookmarks
 
