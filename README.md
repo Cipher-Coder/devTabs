@@ -1,3 +1,5 @@
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![GitHub version](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs.svg)](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs)
+
 # devTabs
 
 ## Firefox extension for New Tab geared towards my Dev Work
