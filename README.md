@@ -1,4 +1,4 @@
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![GitHub version](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs.svg)](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs)
+[![GitHub version](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs.svg)](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs)
 
 # devTabs
 
@@ -32,7 +32,7 @@ Pretty self explanatory. Just a clock with the date. You can change some of the 
 
 ### Dev.to
 
-This is now hooked up to the [dev.to](https://dev.to) API. I have been slowly tweeking the CSS to make it better. At first the 'card' elements were bleeding together, so I tried to give it some spacing. I also added and 'border-bottom' to break it up a bit. I had to figure out a way to not display the broken-link image for stories that did not had a img src. But just adding an alt="" attribute took care of it. 
+This is now hooked up to the [dev.to](https://dev.to) API. I have been slowly tweeking the CSS to make it better. At first the 'card' elements were bleeding together, so I tried to give it some spacing. I also added and 'border-bottom' to break it up a bit. I had to figure out a way to not display the broken-link image for stories that did not had a img src. But just adding an alt="" attribute took care of it.
 
 ### Weather
 
