@@ -1,0 +1,43 @@
+html {
+  background-color: rgb(211, 207, 207);
+  font-family: Helvetica, "Ubuntu", Arial, sans-serif;
+  width: 500px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+a:hover {
+  transition: all 0.2s ease-in;
+  color: #081163;
+}
+
+#mainPopup {
+  padding: 10px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #d8d2d2;
+  cursor: pointer;
+}
+
+#displayQR {
+  text-align: center;
+}
+
+#qr-input {
+  text-align: center;
+}

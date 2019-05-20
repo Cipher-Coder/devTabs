@@ -1,0 +1,298 @@
+html {
+  font-size: 100.01%;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 75%;
+  color: #222222;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #111111;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  margin-bottom: 0.75em;
+  font-size: 2em;
+}
+
+h3 {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+h4 {
+  margin-bottom: 1.25em;
+  font-size: 1.2em;
+  line-height: 1.25;
+}
+
+h5 {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  margin: 0.5em 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  padding: 4px;
+}
+
+input {
+  border-radius: 4px;
+}
+
+.fancy {
+  text-shadow: #f5f5f5 0 1px 0;
+}
+
+.red {
+  color: red;
+}
+
+#sidebar {
+  position: absolute;
+  background-color: #ededed;
+  background-image: linear-gradient(top, #ededed, #f5f5f5);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left 500,
+    color-stop(0, #ededed),
+    color-stop(1, #f5f5f5)
+  );
+  background-image: -moz-linear-gradient(center top, #ededed 0%, #f5f5f5 100%);
+  background-image: -o-linear-gradient(top, #ededed, #f5f5f5);
+  width: 219px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid #c2c2c2;
+  box-shadow: inset -8px 0 30px -30px black;
+}
+
+#icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  left: 12px;
+}
+
+#sidebar h1 {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  font-size: 26px;
+  color: #707070;
+}
+
+#tab-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: right;
+}
+
+#tab-container .tab {
+  height: 28px;
+  padding-right: 25px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  font-size: 12px;
+  line-height: 28px;
+  color: #808080;
+  cursor: pointer;
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.tab-content {
+  position: absolute;
+  width: 840px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  padding-top: 15px;
+}
+
+#submitgituser,
+#submitCalUser,
+#submitbookmark,
+#deleteBookmark,
+#submitWeather {
+  margin: 8px 65px;
+  cursor: pointer;
+}
+
+#showBookmarks {
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.explainSettings {
+  margin: 10px;
+}
+
+.explain {
+  font-size: 0.875rem;
+}
+
+#github-feed,
+#bookmark-option,
+#github-cal,
+#weatherOpt {
+  margin-top: 280px;
+}
+
+.bttn {
+  border: 1px solid #888b8d;
+  background: #9fa0a1;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#d5e3ed),
+    to(#9fa0a1)
+  );
+  background: -webkit-linear-gradient(top, #d5e3ed, #9fa0a1);
+  background: -moz-linear-gradient(top, #d5e3ed, #9fa0a1);
+  background: -ms-linear-gradient(top, #d5e3ed, #9fa0a1);
+  background: -o-linear-gradient(top, #d5e3ed, #9fa0a1);
+  padding: 4px 18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: #000000;
+  font-size: 13px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.bttn:hover {
+  border-top-color: #676f75;
+  background: #676f75;
+  color: #000000;
+}
+.bttn:active {
+  border-top-color: #55595c;
+  background: #55595c;
+}
+
+.bmDescription {
+  margin-top: 20px;
+}
+
+.donate {
+  position: absolute;
+  margin: 0 30px 0 15px;
+  bottom: 30px;
+  text-align: right;
+}
+
+#donation {
+  border-top: 1px solid #a9bdc9;
+  background: #595959;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a8b9c4),
+    to(#595959)
+  );
+  background: -webkit-linear-gradient(top, #a8b9c4, #949494);
+  background: -moz-linear-gradient(top, #a8b9c4, #949494);
+  background: -ms-linear-gradient(top, #a8b9c4, #949494);
+  background: -o-linear-gradient(top, #a8b9c4, #949494);
+  padding: 6px 12px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+#donation:hover {
+  border-top-color: #737475;
+  background: #737475;
+  color: #000000;
+}
+
+#donation:active {
+  border-top-color: #8b9ba6;
+  background: #8b9ba6;
+}
+
+#tracking-info {
+  font-family: Helvetica, "Ubuntu", Arial, sans-serif;
+  text-align: left;
+}
+
+#backHome {
+  position: absolute;
+  bottom: 90px;
+  padding-left: 25px;
+}

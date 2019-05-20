@@ -5,34 +5,35 @@
     }
   },
   "manifest_version": 2,
-  "name": "devtabs",
-  "description": "new tab page geared towards developers",
-  "version": "1.4.4",
-  "homepage_url": "https://github.com/Cipher-Coder/devTabs",
+  "name": "Dev Tabs",
+  "description": "New Tab extension for Web Developers, Full Stack Developers, Software Engineers, GitHub users, and more.",
+  "version": "2.0.1",
+  "homepage_url": "https://mattaz.com/devTabs.html",
   "icons": {
-    "128": "assets/img/devTabs-128x128.png",
-    "48": "assets/img/devTabs-48x48.png",
-    "16": "assets/img/devTabs-16x16.png"
+    "128": "/src/img/icons/devTabs-128x128.png",
+    "48": "/src/img/icons/devTabs-48x48.png",
+    "32": "/src/img/icons/devTabs-30x32.png",
+    "16": "/src/img/icons/devTabs-16x16.png"
   },
+  "options_page": "src/options/options.html",
   "browser_action": {
-    "default_icon": "assets/img/devTabs-32x32.png",
-    "default_title": "devTabs",
-    "default_popup": "assets/popup/popup.html",
+    "default_icon": "/src/img/icons/devTabs-32x32.png",
+    "default_title": "Dev Tabs",
+    "default_popup": "/src/popup/popup.html",
     "browser_style": true
   },
-  "permissions": [
-    "<all_urls>",
-    "tabs",
-    "activeTab",
-    "webRequest",
-    "webRequestBlocking",
-    "storage"
-  ],
-  "chrome_settings_overrides": {
-    "homepage": "assets/index.html"
-  },
   "chrome_url_overrides": {
-    "newtab": "assets/index.html"
+    "newtab": "/src/override/index.html"
   },
-  "content_security_policy": "script-src 'self' https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js; object-src 'self'"
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/", "https://twitter.com/*"],
+      "js": ["/src/js/inject.js"]
+    }
+  ],
+  "permissions": ["<all_urls>", "tabs", "activeTab", "storage"],
+  "chrome_settings_overrides": {
+    "homepage": "/src/override/index.html"
+  },
+  "content_security_policy": "script-src 'self' https://*.googleapis.com; object-src 'self'"
 }

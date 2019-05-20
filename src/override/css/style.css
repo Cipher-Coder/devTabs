@@ -1,0 +1,387 @@
+html {
+  background-color: #252730;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+/* Github Calendar */
+.calendar {
+  max-width: 700px;
+  font-family: Helvetica, arial, serif;
+  border: 1px solid #39dd34;
+  border-radius: 3px;
+  min-height: 243px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.calendar-graph text.wday,
+.calendar-graph text.month {
+  font-size: 10px;
+  fill: rgb(212, 81, 81);
+}
+
+.contrib-legend {
+  text-align: right;
+  padding: 0 14px 10px 0;
+  float: right;
+}
+
+.contrib-legend .legend {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  position: relative;
+  bottom: -1px;
+  padding: 0;
+}
+
+.contrib-legend .legend li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.text-small {
+  font-size: 12px;
+  color: #5bd75b;
+}
+
+.calendar-graph {
+  padding: 5px 0 0;
+  text-align: center;
+}
+
+.contrib-column {
+  padding: 15px 0;
+  text-align: center;
+  border-left: 1px solid #39dd34;
+  border-top: 1px solid #39dd34;
+  font-size: 11px;
+}
+
+.contrib-column-first {
+  border-left: 0;
+}
+
+.table-column {
+  display: table-cell;
+  width: 1%;
+  padding-right: 10px;
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+.contrib-number {
+  font-weight: 300;
+  line-height: 1.3em;
+  font-size: 24px;
+  display: block;
+  color: #5bd75b;
+}
+
+.calendar img.spinner {
+  width: 70px;
+  margin-top: 50px;
+  min-height: 70px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.monospace {
+  font-family: monospace;
+  font-style: normal;
+}
+
+.monospace a {
+  color: #1d75ab;
+  text-decoration: none;
+}
+
+.contrib-footer {
+  font-size: 11px;
+  padding: 0 10px 12px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  height: 26px;
+}
+
+#main {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
+}
+
+.left.text-muted {
+  float: left;
+  margin-left: 9px;
+  color: #1ca0dd;
+}
+
+.left.text-muted a {
+  color: #3987ec;
+  text-decoration: none;
+}
+
+.left.text-muted a:hover,
+.monospace a:hover {
+  text-decoration: underline;
+}
+
+h2.f4.text-normal.mb-3 {
+  display: none;
+}
+
+.float-left.text-gray {
+  float: left;
+  color: #5bd75b;
+}
+
+#user-activity-overview {
+  display: none;
+}
+
+span.text-muted {
+  color: rgb(240, 61, 61);
+}
+
+.text-gray {
+  color: #5bd75b;
+}
+
+.float-left.text-gray a {
+  color: #3987ec;
+}
+
+#clock,
+#date {
+  font-family: "Share Tech Mono", monospace;
+  max-width: 700px;
+  display: inline-block;
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 10px #1b8db3, 0 0 10px rgba(10, 175, 230, 0);
+}
+
+#clock {
+  letter-spacing: 0.05em;
+  padding: 5px 0;
+}
+
+#date {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+
+li a:link {
+  color: #808fbb;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: #808fbb;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: none !important;
+  transition: all 0.2s ease-in;
+  color: #f1fa8c;
+}
+
+.repo-name a {
+  color: #f1fa8c;
+  text-decoration: none;
+}
+
+.repo-name a:hover {
+  transition: all 0.2s ease-in;
+  color: greenyellow;
+}
+
+.repo-container {
+  border-left: solid #6272a4 3px;
+  padding-bottom: 15px;
+}
+
+.repo-container:hover {
+  transition: all 0.2s ease-in;
+  border-left: solid greenyellow 3px;
+}
+
+#gitFeed {
+  float: left;
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  width: 20%;
+}
+
+#gitFeed::-webkit-scrollbar {
+  display: none;
+}
+
+#dev-to {
+  float: left;
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 20%;
+}
+
+#dev-to::-webkit-scrollbar {
+  display: none;
+}
+
+#options {
+  -webkit-filter: brightness(70%);
+  -moz-filter: brightness(70%);
+  -o-filter: brightness(70%);
+  -ms-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+#options:hover {
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+#devStart a:hover {
+  color: greenyellow;
+}
+
+#devStart a {
+  color: #f1fa8c;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+#devStart p {
+  color: white;
+}
+
+.card {
+  padding-bottom: 5px;
+  border-bottom: solid 1px #6272a4;
+  margin-top: 30px;
+}
+
+#bookmarks {
+  float: left;
+  overflow: auto;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  width: 10%;
+}
+
+#bookmarks::-webkit-scrollbar {
+  display: none;
+}
+
+#bookmarkList li {
+  color: lightblue;
+  list-style: none;
+  line-height: 1.5;
+  text-indent: -0.7rem;
+}
+
+#bookmarkList li:nth-child(3n + 1)::before {
+  content: url("/icons/favicon1.ico");
+  padding-right: 1rem;
+}
+
+#bookmarkList li:nth-child(3n + 2)::before {
+  content: url("/icons/favicon2.ico");
+  padding-right: 1rem;
+}
+
+#bookmarkList li:nth-child(3n)::before {
+  content: url("/icons/favicon3.ico");
+  padding-right: 1rem;
+}
+
+#addIcon {
+  color: orangered;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.singleDesc {
+  color: orangered;
+  margin-top: -5px;
+}
+
+.addBookmark {
+  margin-right: 2px;
+}
+
+#addItem {
+  cursor: pointer;
+  margin-top: 9px;
+  border: 1px solid #455259;
+  background: #46535c;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a1a1a1),
+    to(#46535c)
+  );
+  background: -webkit-linear-gradient(top, #a1a1a1, #46535c);
+  background: -moz-linear-gradient(top, #a1a1a1, #46535c);
+  background: -ms-linear-gradient(top, #a1a1a1, #46535c);
+  background: -o-linear-gradient(top, #a1a1a1, #46535c);
+  padding: 5px 10px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+  color: #000000;
+  font-size: 12px;
+  font-family: Georgia, serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+#addItem:hover {
+  border-top-color: #4a5359;
+  background: #4a5359;
+  color: #000000;
+}
+#addItem:active {
+  border-top-color: #39434a;
+  background: #39434a;
+}
+
+#urlName {
+  height: 1.5rem;
+  margin: 5px;
+}
+
+#siteUrl {
+  height: 1.5rem;
+  margin: 5px;
+}
+
+label {
+  color: #808fbb;
+}
