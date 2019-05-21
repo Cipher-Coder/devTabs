@@ -33,7 +33,13 @@
       "js": ["/src/js/inject.js"]
     }
   ],
-  "permissions": ["<all_urls>", "tabs", "activeTab", "storage"],
+  "permissions": [
+    "https://dev.to/api/*",
+    "https://api.github.com/*",
+    "https://api.openweathermap.org/*",
+    "activeTab",
+    "storage"
+  ],
   "chrome_settings_overrides": {
     "homepage": "/src/override/index.html"
   },
