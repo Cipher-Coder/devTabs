@@ -257,3 +257,9 @@ function clearInput() {
   document.getElementById("siteUrl").value = "";
   document.location.reload(true);
 }
+
+window.onpageshow = function(event) {
+  if (event.persisted) {
+    document.location.reload(true);
+  }
+};

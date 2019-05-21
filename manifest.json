@@ -15,7 +15,9 @@
     "32": "/src/img/icons/devTabs-30x32.png",
     "16": "/src/img/icons/devTabs-16x16.png"
   },
-  "options_page": "src/options/options.html",
+  "options_ui": {
+    "page": "/src/options/options.html"
+  },
   "browser_action": {
     "default_icon": "/src/img/icons/devTabs-32x32.png",
     "default_title": "Dev Tabs",

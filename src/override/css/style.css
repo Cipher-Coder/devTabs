@@ -285,6 +285,7 @@ li a:hover {
   height: 100vh;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
+  scrollbar-width: none;
   width: 10%;
 }
 
@@ -296,21 +297,21 @@ li a:hover {
   color: lightblue;
   list-style: none;
   line-height: 1.5;
-  text-indent: -0.7rem;
+  text-indent: -0.5rem;
 }
 
 #bookmarkList li:nth-child(3n + 1)::before {
-  content: url("/icons/favicon1.ico");
+  content: url("/src/img/favicon1.ico");
   padding-right: 1rem;
 }
 
 #bookmarkList li:nth-child(3n + 2)::before {
-  content: url("/icons/favicon2.ico");
+  content: url("/src/img/favicon2.ico");
   padding-right: 1rem;
 }
 
 #bookmarkList li:nth-child(3n)::before {
-  content: url("/icons/favicon3.ico");
+  content: url("/src/img/favicon3.ico");
   padding-right: 1rem;
 }
 
@@ -384,4 +385,8 @@ li a:hover {
 
 label {
   color: #808fbb;
+}
+
+#bmList li {
+  margin-left: -5px;
 }
