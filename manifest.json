@@ -33,7 +33,7 @@
       "js": ["/src/js/inject.js"]
     }
   ],
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["activeTab", "storage", "http://*/", "https://*/"],
   "chrome_settings_overrides": {
     "homepage": "/src/override/index.html"
   },
