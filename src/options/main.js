@@ -1,8 +1,3 @@
-const marked = require("/src/js/marked.js");
-marked.setOptions({
-  sanitize: true
-});
-
 document.getElementById("git-feed").addEventListener("click", feedDisplay);
 function feedDisplay() {
   let feedSettings = document.getElementById("github-feed");
@@ -133,6 +128,10 @@ function saveBookmarks() {
   userBookmarks = document.getElementById("bookmarkForm").value;
 
   let tempBook = new Array();
+
+  marked.setOptions({
+    sanitize: true
+  });
 
   tempBook = marked.inlineLexer(userBookmarks, []).split(",");
 
