@@ -75,6 +75,9 @@ var GithubFeed = {
         const desc = document.createElement("div");
         desc.setAttribute("class", "repo-description");
         desc.textContent = repos[i].description;
+        if (repos[i].description === null) {
+          desc.textContent = "Add description to your repo...";
+        }
 
         reposList.appendChild(div);
         div.appendChild(head);
