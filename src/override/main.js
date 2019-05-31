@@ -206,6 +206,10 @@ request.onload = function() {
       a.href = article.url;
       a.textContent = article.title;
       const p = document.createElement("p");
+      p.setAttribute(
+        "style",
+        "font-style: italic; letter-spacing: 0.07em; font-size: 0.75em;"
+      );
       article.description = article.description.substring(0, 300);
       p.textContent = `${article.description}...`;
       const img = document.createElement("img");

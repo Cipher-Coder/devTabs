@@ -7,7 +7,7 @@
   "manifest_version": 2,
   "name": "Dev Tabs",
   "description": "New Tab extension for Web Developers, Full Stack Developers, Software Engineers, GitHub users, and more.",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "homepage_url": "https://mattaz.com/devTabs.html",
   "icons": {
     "128": "/src/img/icons/devTabs-128x128.png",
@@ -24,6 +24,9 @@
     "default_popup": "/src/popup/popup.html",
     "browser_style": true
   },
+  "chrome_settings_overrides": {
+    "homepage": "/src/override/index.html"
+  },
   "chrome_url_overrides": {
     "newtab": "/src/override/index.html"
   },
@@ -33,8 +36,5 @@
       "js": ["/src/js/inject.js"]
     }
   ],
-  "permissions": ["activeTab", "storage", "https://dev.to/api/articles"],
-  "chrome_settings_overrides": {
-    "homepage": "/src/override/index.html"
-  }
+  "permissions": ["activeTab", "storage", "https://dev.to/api/articles"]
 }
