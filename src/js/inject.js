@@ -15,9 +15,10 @@ setInterval(function() {
   if (links) {
     insertLinks(links);
   }
-}, 50);
+}, 30000);
 
 function insertLinks(data) {
+  console.log(data);
   var trendsBox = document.getElementsByClassName("Trends")[0];
   var devBox = document.getElementById("dev-to-trends");
   if (!trendsBox || devBox) return;

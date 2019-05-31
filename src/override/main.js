@@ -14,7 +14,8 @@ window.onload = function makeBookmark() {
       myBookmarks.forEach(makeBookmark);
       ul += "</ul>";
 
-      document.getElementById("bookmarkList").innerHTML = ul;
+      let bkmk = document.getElementById("bookmarkList");
+      bkmk.innerHTML = ul;
 
       function makeBookmark(value) {
         ul += "<li class='userMark'>" + value + "</li>";
@@ -33,8 +34,14 @@ chrome.storage.local.get(["gitCalName"], function(result) {
     calStart.textContent = "Please go to settings and configure your username!";
   } else {
     // Info to initiate the github calendar - pulled into the github-calendar.js
+    /*  let calStart = document.getElementById("calendar-start"); */
     let calendarName = result.gitCalName;
     new GitHubCalendar(".calendar", calendarName, { responsive: true });
+    /* let img = document.createElement("img");
+    img.src = "http://ghchart.rshah.org/" + calendarName;
+    img.alt = calendarName + " GitHub Contributions Graph";
+
+    calStart.appendChild(img); */
   }
 });
 

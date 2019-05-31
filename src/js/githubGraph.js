@@ -103,11 +103,8 @@ var _typeof =
               (i = i || {}),
               (i.summary_text =
                 i.summary_text ||
-                'Summary of pull requests, issues opened, and commits made by <a href="https://github.com/' +
-                  t +
-                  '" target="blank">@' +
-                  t +
-                  "</a>"),
+                "Summary of pull requests, issues opened, and commits made by " +
+                  t),
               i.responsive === !0 && e.classList.add("calendar-responsive"),
               i.global_stats === !1 && (e.style.minHeight = "175px"),
               (i.proxy =
@@ -122,11 +119,16 @@ var _typeof =
                 })
                 .then(function(t) {
                   var c = document.createElement("div");
-                  c.innerHTML = t;
+                  /* let parent = document.getElementById("calendar-start"); */
+                  /* c.innerHTML = t; */
+                  /* let mat = `${t}`; */
+                  var cleanT = DOMPurify.sanitize(t);
+                  c.innerHTML = cleanT;
                   var d = c.querySelector(".js-yearly-contributions");
+
                   if (
                     (n(".position-relative h2", d).remove(),
-                    (d.querySelector(".float-left.text-gray").innerHTML =
+                    (d.querySelector(".float-left.text-gray").textContent =
                       i.summary_text),
                     d.querySelector("include-fragment"))
                   )
@@ -192,7 +194,7 @@ var _typeof =
                         });
                       d.appendChild(y), d.appendChild(v), d.appendChild(M);
                     }
-                    e.innerHTML = d.innerHTML;
+                    e.appendChild(d);
                   }
                 })
                 ["catch"](function(e) {
@@ -390,7 +392,8 @@ var _typeof =
                       case "text":
                         return void (e.textContent = t);
                       case "html":
-                        return void (e.innerHTML = t);
+                        var clean = DOMPurify.sanitize(t);
+                        return void (e.innerHTML = clean);
                     }
                     e.setAttribute(r, t);
                   }),
