@@ -119,13 +119,10 @@ var _typeof =
                 })
                 .then(function(t) {
                   var c = document.createElement("div");
-                  /* let parent = document.getElementById("calendar-start"); */
-                  /* c.innerHTML = t; */
-                  /* let mat = `${t}`; */
-                  var cleanT = DOMPurify.sanitize(t);
-                  c.innerHTML = cleanT;
+                  var dirty = t;
+                  var clean = DOMPurify.sanitize(dirty);
+                  c.innerHTML = clean;
                   var d = c.querySelector(".js-yearly-contributions");
-
                   if (
                     (n(".position-relative h2", d).remove(),
                     (d.querySelector(".float-left.text-gray").textContent =
@@ -392,7 +389,8 @@ var _typeof =
                       case "text":
                         return void (e.textContent = t);
                       case "html":
-                        var clean = DOMPurify.sanitize(t);
+                        var dirty = t;
+                        var clean = DOMPurify.sanitize(dirty);
                         return void (e.innerHTML = clean);
                     }
                     e.setAttribute(r, t);

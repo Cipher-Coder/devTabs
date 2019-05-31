@@ -4,7 +4,8 @@ fetch("https://dev.to/api/articles")
   .then(function(response) {
     response.json().then(function(data) {
       links = data;
-      insertLinks(data);
+      var clean = DOMPurify.sanitize(data);
+      insertLinks(clean);
     });
   })
   .catch(function(err) {
@@ -15,15 +16,14 @@ setInterval(function() {
   if (links) {
     insertLinks(links);
   }
-}, 30000);
+}, 50);
 
-function insertLinks(data) {
-  console.log(data);
+function insertLinks(clean) {
   var trendsBox = document.getElementsByClassName("Trends")[0];
   var devBox = document.getElementById("dev-to-trends");
   if (!trendsBox || devBox) return;
   var newItem = document.createElement("DIV");
-  newItem.innerHTML = trendsHTML(listHTML(data));
+  newItem.innerHTML = trendsHTML(listHTML(clean));
   insertAfter(newItem, trendsBox);
 }
 
@@ -42,8 +42,8 @@ function twitterLink(item) {
   );
 }
 
-function listHTML(data) {
-  return data
+function listHTML(clean) {
+  return clean
     .slice(0, 11)
     .map(function(item) {
       return linkItemHTML(item);

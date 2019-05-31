@@ -1,3 +1,8 @@
+const marked = require("/src/js/marked.js");
+marked.setOptions({
+  sanitize: true
+});
+
 document.getElementById("git-feed").addEventListener("click", feedDisplay);
 function feedDisplay() {
   let feedSettings = document.getElementById("github-feed");
