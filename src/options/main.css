@@ -339,13 +339,13 @@ input {
 .onoffswitch-inner:before {
   content: "Imperial";
   padding-left: 10px;
-  background-color: #919191;
+  background-color: #383838;
   color: #ffffff;
 }
 .onoffswitch-inner:after {
   content: "Metric";
   padding-right: 10px;
-  background-color: #919191;
+  background-color: #383838;
   color: #ffffff;
   text-align: right;
 }
@@ -353,7 +353,7 @@ input {
   display: block;
   width: 17px;
   margin: -0.5px;
-  background: #26cc42;
+  background: #1aeaf1;
   position: absolute;
   top: 0;
   bottom: 0;
