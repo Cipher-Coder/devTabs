@@ -111,3 +111,19 @@ The [DEV](https://dev.to) feed is not showing up when on [Twitter](https://twitt
 ## Firefox Public Release
 
 This is the first version released to the public
+
+---
+
+#### Libraries Used
+
+- [Marked.js](https://cdn.jsdelivr.net/npm/marked/marked.min.js)
+
+  - [Marked.js repo](https://github.com/markedjs/marked)
+
+- [GitHub-calendar.js](https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js)
+
+  - [GitHub-calendar.js repo](https://github.com/IonicaBizau/github-calendar)
+
+- [DOMPurify.js](https://github.com/cure53/DOMPurify)
+
+- [Github-Feed.js](https://github.com/samwx/GithubFeed)
