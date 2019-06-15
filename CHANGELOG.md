@@ -4,8 +4,6 @@ Any noteable changes and version notes will be kept in this file.
 
 ## v2.1.0
 
----
-
 ### Changes
 
 #### Added option to change the Unit of Measure on Weather Display
@@ -21,8 +19,6 @@ Had a request to add in functionality to change the weather information display 
 &nbsp;
 
 ## v2.0.8
-
----
 
 ### Changes
 
@@ -42,8 +38,6 @@ After looking at the extension loaded on a small laptop I noticed that when the 
 
 ## v2.0.7
 
----
-
 ### Changes
 
 #### Style Changes
@@ -59,8 +53,6 @@ Minor CSS Style changes
 &nbsp;
 
 ## v2.0.5
-
----
 
 ### Changes
 
@@ -78,8 +70,6 @@ Mozilla notified me that one of the libs I was using needed steralization or a r
 
 ## v2.0.4
 
----
-
 ### Changes
 
 #### Updated Permissions
@@ -92,8 +82,6 @@ Trying to get the [DEV](https://dev.to) feed to show up next to the [Twitter](ht
 
 ## v2.0.3
 
----
-
 ### Changes
 
 #### Updated Permissions
@@ -105,8 +93,6 @@ The [DEV](https://dev.to) feed is not showing up when on [Twitter](https://twitt
 &nbsp;
 
 ## v2.0.2
-
----
 
 ## Firefox Public Release
 
