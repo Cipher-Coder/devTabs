@@ -2,6 +2,18 @@
 
 Any noteable changes and version notes will be kept in this file.
 
+## v2.1.1
+
+### Changes
+
+#### Sanitize user input for the individual bookmark add
+
+Working on security updates
+
+- DOMPurify lib is already being used for the input on the settings page. I made sure the input from the single add bookmark on the main page was sanitized as well.
+
+&nbsp;
+
 ## v2.1.0
 
 ### Changes

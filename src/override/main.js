@@ -282,7 +282,8 @@ function addEntry() {
     let urlName = document.getElementById("urlName").value;
     let url = document.getElementById("siteUrl").value;
     let entry = "<a href='" + url + "'>" + urlName + "</a>";
-    existingEntries.push(entry);
+    let cleanEntry = DOMPurify.sanitize(entry);
+    existingEntries.push(cleanEntry);
     chrome.storage.local.set({ userBookmark: existingEntries }, function() {
       console.log("New Entry Saved");
       clearInput();
