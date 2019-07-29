@@ -2,6 +2,17 @@
 
 Any noteable changes and version notes will be kept in this file.
 
+## v2.1.2
+
+## Changes
+
+#### Fixed the [DEV](https://dev.to) box from showing up in the central feed when you switch to another page
+
+After changing the [DEV](https://dev.to) box CSS classes, I realized that if you were to click on another page it would put the box in the main feed. The CSS classes selected as a reference in the DOM were reused on the other page forcing the box into a position it should not have been in. I had to be even more specific and add in more of the classes to have more specificity. 
+
+
+&nbsp;
+
 ## v2.1.1
 
 ## Changes
