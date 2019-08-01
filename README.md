@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/Cipher-Coder/devTabs.svg)](https://github.com/Cipher-Coder/devTabs/blob/master/LICENSE.txt) [![GitHub version](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs.svg)](https://badge.fury.io/gh/Cipher-Coder%2FdevTabs)
+[![GitHub license](https://img.shields.io/github/license/Cipher-Coder/devTabs.svg)](https://github.com/Cipher-Coder/devTabs/blob/master/LICENSE.txt) ![Mozilla Add-on](https://img.shields.io/amo/dw/dev-tabs)
 
 # Dev Tabs
 
