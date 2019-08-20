@@ -2,13 +2,27 @@
 
 Any noteable changes and version notes will be kept in this file.
 
+## v2.1.3
+
+## Changes
+
+#### Fixed the URL Proxy I was hitting
+
+The URL Proxy I was using to hit GitHub (in githubGraph.js) and get commit graph details kept going over its limit and interrupting my service. So I created my own Proxy through Google App Engine and am now hitting that and all is working again.
+
+Also changed className in Twitter inject script for new Twitter UI. They are still changing their UI so this may only work temporarily. I will continue checking the site to keep up on the new classNames.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.2
 
 ## Changes
 
 #### Fixed the [DEV](https://dev.to) box from showing up in the central feed when you switch to another page
 
-After changing the [DEV](https://dev.to) box CSS classes, I realized that if you were to click on another page it would put the box in the main feed. The CSS classes selected as a reference in the DOM were reused on the other page forcing the box into a position it should not have been in. I had to be even more specific and add in more of the classes to have more specificity. 
+After changing the [DEV](https://dev.to) box CSS classes, I realized that if you were to click on another page it would put the box in the main feed. The CSS classes selected as a reference in the DOM were reused on the other page forcing the box into a position it should not have been in. I had to be even more specific and add in more of the classes to have more specificity.
 
 > No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
@@ -21,11 +35,12 @@ After changing the [DEV](https://dev.to) box CSS classes, I realized that if you
 #### Fixed Twitter portion of extension after Twitter's UI update
 
 Changed all CSS classes in inject.js
-- Adjusted all function calls 
+
+- Adjusted all function calls
 - Changed all class names to match Twitter's new ones
 - Changed Template literals so everything will work
 
-*Still some work to be done on styling - Just wanted to at least get it working*
+_Still some work to be done on styling - Just wanted to at least get it working_
 
 Ran autoprefixer on all CSS files
 
@@ -104,10 +119,10 @@ Mozilla notified me that one of the libs I was using needed steralization or a r
 - I added the purify.js lib and made sure any and all data was steralized
 
 - Refactored and fixed some of the calls to innerHTML
+
   - In the refactor, I changed some of the library's calls to innerHTML so it is not a carbon copy of the lib
 
 - Completely removed the Content Security Policy - It was not actually needed
-
 
 &nbsp;
 
