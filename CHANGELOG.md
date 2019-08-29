@@ -2,6 +2,18 @@
 
 Any noteable changes and version notes will be kept in this file.
 
+## v2.1.4
+
+## Changes
+
+#### Total re-write of github-calendar.js
+
+This release is centered around a complete re-write of the `githubGraph.js` file. I changed from hitting GitHub in general to `https://github.com/users/username/contributions` API and instead of parsing the entire profile and getting just the contribution info this will in turn decrease the downloaded file size and increase loading time for the calendar since it is just the contribution info being loaded. A 20 kb vs 382 kb download difference. I also made sure my proxy was coded into the lib so it did not depend on someone else's free tier from App Engine.
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.3
 
 ## Changes
