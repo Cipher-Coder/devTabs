@@ -9,6 +9,7 @@ Any notable changes and version notes will be kept in this file.
 #### Minor fixes
 
 * fixed script tags outside body in `index.html` - was throwing error
+* Darkened Settings UI slightly to better fit w/Dark Theme of Index Page
 
 &nbsp;
 
