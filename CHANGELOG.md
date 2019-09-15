@@ -1,6 +1,16 @@
 # Changelog
 
-Any noteable changes and version notes will be kept in this file.
+Any notable changes and version notes will be kept in this file.
+
+## v2.1.5
+
+## Changes
+
+#### Minor fixes
+
+* fixed script tags outside body in `index.html` - was throwing error
+
+&nbsp;
 
 ## v2.1.4
 
