@@ -19,6 +19,7 @@ a:hover {
 
 #mainPopup {
   padding: 10px;
+  max-width: 580px;
 }
 
 button {
@@ -38,5 +39,9 @@ button:hover {
 }
 
 #qr-input {
+  text-align: center;
+}
+
+#responsiveView {
   text-align: center;
 }
