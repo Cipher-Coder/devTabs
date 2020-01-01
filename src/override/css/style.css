@@ -229,6 +229,7 @@ li a:hover {
   height: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
+  scrollbar-width: none;
   width: 20%;
 }
 
@@ -369,13 +370,11 @@ li a:hover {
   margin-top: 9px;
   border: 1px solid #455259;
   background: #46535c;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#a1a1a1),
-    to(#46535c)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(#a1a1a1),
+      to(#46535c));
   background: -webkit-linear-gradient(top, #a1a1a1, #46535c);
   background: -moz-linear-gradient(top, #a1a1a1, #46535c);
   background: -ms-linear-gradient(top, #a1a1a1, #46535c);
@@ -394,11 +393,13 @@ li a:hover {
   text-decoration: none;
   vertical-align: middle;
 }
+
 #addItem:hover {
   border-top-color: #4a5359;
   background: #4a5359;
   color: #000000;
 }
+
 #addItem:active {
   border-top-color: #39434a;
   background: #39434a;

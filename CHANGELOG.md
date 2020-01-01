@@ -8,8 +8,13 @@ Any notable changes and version notes will be kept in this file.
 
 #### Minor fixes
 
-* fixed script tags outside body in `index.html` - was throwing error
-* Darkened Settings UI slightly to better fit w/Dark Theme of Index Page
+- fixed script tags outside body in `index.html` - was throwing error
+- Darkened Settings UI slightly to better fit w/Dark Theme of Index Page
+- API call to Dev.to going stale not fetching the latest articles. Changed the query to fetch 'top' articles and after testing it for days, it seems to be doing much better.
+- Adjusted CSS for the list of Repo's so it no longer shows a scrollbar on smaller screens
+- Adjusted style on the buttons in the settings to better match overall style
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
 &nbsp;
 
