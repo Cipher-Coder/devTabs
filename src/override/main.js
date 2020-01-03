@@ -37,15 +37,8 @@ chrome.storage.local.get(["gitCalName"], function(result) {
     calStart.setAttribute("style", "color: red; font-size: 1.25rem;");
     calStart.textContent = "Please go to settings and configure your username!";
   } else {
-    // Info to initiate the github calendar - pulled into the github-calendar.js
-    /*  let calStart = document.getElementById("calendar-start"); */
     let calendarName = result.gitCalName;
     new GitHubCalendar(".calendar", calendarName, { responsive: true });
-    /* let img = document.createElement("img");
-    img.src = "http://ghchart.rshah.org/" + calendarName;
-    img.alt = calendarName + " GitHub Contributions Graph";
-
-    calStart.appendChild(img); */
   }
 });
 
@@ -222,7 +215,7 @@ request.onload = function() {
       p.textContent = `${article.description}...`;
       const img = document.createElement("img");
       img.src = article.cover_image;
-      img.alt = "";
+      img.alt = "Article Cover Image";
       img.onerror = function() {
         this.style.display = "none";
       };
