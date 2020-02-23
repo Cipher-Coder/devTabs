@@ -2,6 +2,19 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## v2.1.6
+
+## Changes
+
+#### Minor fixes
+
+- Fixed console error when there was not a cover_image included with an article. Error would be thrown when JSON value of cover_image field was `null`. Added a simple `if` statement to evaluate and on null its now just `display:none`.
+
+
+> No other libs were added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.5
 
 ## Changes
