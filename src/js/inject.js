@@ -1,32 +1,32 @@
-var links = null;
+let links = null;
 
-fetch("https://dev.to/api/articles")
-  .then(function(response) {
-    response.json().then(function(data) {
+fetch('https://dev.to/api/articles')
+  .then(function (response) {
+    response.json().then(function (data) {
       links = data;
-      var clean = DOMPurify.sanitize(data);
+      let clean = DOMPurify.sanitize(data);
       insertLinks(clean);
     });
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log(err);
   });
 
-setInterval(function() {
+setInterval(function () {
   if (links) {
     insertLinks(links);
   }
 }, 50);
 
 function insertLinks(clean) {
-  var trendsBox = document.getElementsByClassName(
-    "css-1dbjc4n r-1uaug3w r-1uhd6vh r-t23y2h r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"
+  let trendsBox = document.getElementsByClassName(
+    'css-1dbjc4n r-1uaug3w r-1uhd6vh r-t23y2h r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x'
   )[0];
-  var devBox = document.getElementById("dev-to-trends");
+  let devBox = document.getElementById('dev-to-trends');
   if (!trendsBox || devBox) return;
-  var newItem = document.createElement("DIV");
+  let newItem = document.createElement('DIV');
   newItem.className =
-    "css-1dbjc4n r-1uaug3w r-1uhd6vh r-t23y2h r-1phboty r-rs99b7 r-15d164r r-1udh08x";
+    'css-1dbjc4n r-1uaug3w r-1uhd6vh r-t23y2h r-1phboty r-rs99b7 r-15d164r r-1udh08x';
   newItem.innerHTML = trendsHTML(listHTML(clean));
   insertAfter(newItem, trendsBox);
 }
@@ -36,23 +36,23 @@ function insertAfter(newNode, referenceNode) {
 }
 
 function twitterLink(item) {
-  if (!item.user.twitter_username) return "";
+  if (!item.user.twitter_username) return '';
   return (
     '&nbsp; (<a style="display:inline;color:rgba(29, 161, 242, .8);" href="https://twitter.com/' +
     item.user.twitter_username +
     '">@' +
     item.user.twitter_username +
-    "</a>)"
+    '</a>)'
   );
 }
 
 function listHTML(clean) {
   return clean
     .slice(0, 11)
-    .map(function(item) {
+    .map(function (item) {
       return linkItemHTML(item);
     })
-    .join("");
+    .join('');
 }
 
 function linkItemHTML(item) {
@@ -70,9 +70,9 @@ function linkItemHTML(item) {
 						' +
     item.user.name +
     twitterLink(item) +
-    "\
+    '\
 					</div>\
-					</li>"
+					</li>'
   );
 }
 
@@ -87,6 +87,6 @@ function trendsHTML(listItems) {
 					<ul class="css-1dbjc4n r-1qd0xha" style="list-style-type: none;" id="dev-to-trends">\
 					' +
     listItems +
-    "</ul></div></div></div>"
+    '</ul></div></div></div>'
   );
 }
