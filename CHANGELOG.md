@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.1.7
+
+## Changes
+
+#### Fixed By-Line in Dev.to articles
+
+Fixed Dev.to article by-line - problem was: if there was no twitter_username returned with the article object, the entire article was omitted. I fixed it so if there is no twitter_username, it will now display and link to the Dev.to username.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.1.6
 
 ## Changes
