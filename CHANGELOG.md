@@ -12,14 +12,15 @@ Any notable changes and version notes will be kept in this file.
 
 - I fixed some misspellings, and made the '+' icon to add a bookmark switch to '-' when clicked to signal to user to click that button again to get back to the original state.
 
-- Basic refactoring, fixed some commas that should have been semi-colons. Changed some var into let. 
+- Basic refactoring, fixed some commas that should have been semi-colons. Changed some var into let.
 
 - Changed the font color of the save button on the place you add a single bookmark.
 
 - Added some JSDoc comments to clear errors in Webstorm.
 
--Fixed chrome.storage.removeItem to just chrome.storage.remove
+- Fixed chrome.storage.removeItem to just chrome.storage.remove to fix the delete bookmark option and actually make it work correctly. Previously it would not actually delete the saved bookmarks for the extension.
 
+- Updated DOMpurify lib to latest, and removed line referencing sourcemaps to get rid of warning in console.
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
