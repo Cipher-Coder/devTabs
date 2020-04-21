@@ -1,9 +1,15 @@
-document.getElementById('git-feed').addEventListener('click', feedDisplay);
+const gitFeed = document.getElementById('git-feed');
+const feedSettings = document.getElementById('github-feed');
+const bookmarkSettings = document.getElementById('bookmark-option');
+const calSettings = document.getElementById('github-cal');
+const weatherSettings = document.getElementById('weatherOpt');
+
+const bookmarkOption = document.getElementById('bookmark-opt');
+const githubOption = document.getElementById('githubCal');
+const weatherOption = document.getElementById('weatherInfo');
+
+gitFeed.addEventListener('click', feedDisplay);
 function feedDisplay() {
-  let feedSettings = document.getElementById('github-feed');
-  let bookmarkSettings = document.getElementById('bookmark-option');
-  let calSettings = document.getElementById('github-cal');
-  let weatherSettings = document.getElementById('weatherOpt');
   if (feedSettings.style.display === 'none') {
     feedSettings.style.display = 'block';
     bookmarkSettings.style.display = 'none';
@@ -14,9 +20,8 @@ function feedDisplay() {
   }
 }
 // Toggle settings being shown
-document
-  .getElementById('bookmark-opt')
-  .addEventListener('click', bookmarkDisplay);
+
+bookmarkOption.addEventListener('click', bookmarkDisplay);
 function bookmarkDisplay() {
   let bookmarkSettings = document.getElementById('bookmark-option');
   let feedSettings = document.getElementById('github-feed');
@@ -32,7 +37,7 @@ function bookmarkDisplay() {
   }
 }
 // Toggle settings being shown
-document.getElementById('githubCal').addEventListener('click', calendarDisplay);
+githubOption.addEventListener('click', calendarDisplay);
 function calendarDisplay() {
   let calSettings = document.getElementById('github-cal');
   let bookmarkSettings = document.getElementById('bookmark-option');
@@ -48,9 +53,7 @@ function calendarDisplay() {
   }
 }
 // Toggle settings being shown
-document
-  .getElementById('weatherInfo')
-  .addEventListener('click', weatherDisplay);
+weatherOption.addEventListener('click', weatherDisplay);
 function weatherDisplay() {
   let calSettings = document.getElementById('github-cal');
   let bookmarkSettings = document.getElementById('bookmark-option');
@@ -141,13 +144,9 @@ function saveBookmarks() {
   let userBookmarks = [];
   userBookmarks = document.getElementById('bookmarkForm').value;
 
-  let tempBook = new Array();
+  let mytempBook = DOMPurify.sanitize(userBookmarks);
 
-  marked.setOptions({
-    sanitize: true,
-  });
-
-  tempBook = marked.inlineLexer(userBookmarks, []).split(',');
+  let tempBook = marked.inlineLexer(mytempBook, []).split(',');
 
   chrome.storage.local.set({ userBookmark: tempBook }, function () {
     console.log('Bookmarks Logged');

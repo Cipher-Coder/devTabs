@@ -16,10 +16,7 @@ window.onload = function makeBookmark() {
 
       let bkmk = document.getElementById('bookmarkList');
 
-      let dirty = ul;
-      let clean = DOMPurify.sanitize(dirty);
-
-      bkmk.innerHTML = clean;
+      bkmk.innerHTML = ul;
 
       function makeBookmark(value) {
         ul += "<li class='userMark'>" + value + '</li>';

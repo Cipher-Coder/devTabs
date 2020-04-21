@@ -10,6 +10,8 @@ Any notable changes and version notes will be kept in this file.
 
 Fixed Dev.to article by-line - problem was: if there was no twitter_username returned with the article object, the entire article was omitted. I fixed it so if there is no twitter_username, it will now display and link to the Dev.to username.
 
+Refactor - cleaned up some variables and got rid of redundant call to sanitize. While updating the [Marked.js](https://marked.js.org) library dropped support for sanitizing markdown on input. I was able to just use the DOMpurify already being used in other places to sanitize that input too.
+
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
 &nbsp;
