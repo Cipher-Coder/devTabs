@@ -1,9 +1,9 @@
-const gitFeed = document.getElementById('git-feed');
 const feedSettings = document.getElementById('github-feed');
 const bookmarkSettings = document.getElementById('bookmark-option');
 const calSettings = document.getElementById('github-cal');
 const weatherSettings = document.getElementById('weatherOpt');
 
+const gitFeed = document.getElementById('git-feed');
 const bookmarkOption = document.getElementById('bookmark-opt');
 const githubOption = document.getElementById('githubCal');
 const weatherOption = document.getElementById('weatherInfo');
@@ -23,10 +23,6 @@ function feedDisplay() {
 
 bookmarkOption.addEventListener('click', bookmarkDisplay);
 function bookmarkDisplay() {
-  let bookmarkSettings = document.getElementById('bookmark-option');
-  let feedSettings = document.getElementById('github-feed');
-  let calSettings = document.getElementById('github-cal');
-  let weatherSettings = document.getElementById('weatherOpt');
   if (bookmarkSettings.style.display === 'none') {
     bookmarkSettings.style.display = 'block';
     calSettings.style.display = 'none';
@@ -39,10 +35,6 @@ function bookmarkDisplay() {
 // Toggle settings being shown
 githubOption.addEventListener('click', calendarDisplay);
 function calendarDisplay() {
-  let calSettings = document.getElementById('github-cal');
-  let bookmarkSettings = document.getElementById('bookmark-option');
-  let feedSettings = document.getElementById('github-feed');
-  let weatherSettings = document.getElementById('weatherOpt');
   if (calSettings.style.display === 'none') {
     calSettings.style.display = 'block';
     bookmarkSettings.style.display = 'none';
@@ -55,10 +47,6 @@ function calendarDisplay() {
 // Toggle settings being shown
 weatherOption.addEventListener('click', weatherDisplay);
 function weatherDisplay() {
-  let calSettings = document.getElementById('github-cal');
-  let bookmarkSettings = document.getElementById('bookmark-option');
-  let feedSettings = document.getElementById('github-feed');
-  let weatherSettings = document.getElementById('weatherOpt');
   if (weatherSettings.style.display === 'none') {
     weatherSettings.style.display = 'block';
     calSettings.style.display = 'none';
