@@ -8,6 +8,7 @@ const bookmarkOption = document.getElementById('bookmark-opt');
 const githubOption = document.getElementById('githubCal');
 const weatherOption = document.getElementById('weatherInfo');
 
+// Toggle which settings are shown
 gitFeed.addEventListener('click', feedDisplay);
 function feedDisplay() {
   if (feedSettings.style.display === 'none') {
@@ -19,7 +20,6 @@ function feedDisplay() {
     feedSettings.style.display = 'none';
   }
 }
-// Toggle settings being shown
 
 bookmarkOption.addEventListener('click', bookmarkDisplay);
 function bookmarkDisplay() {
@@ -32,7 +32,7 @@ function bookmarkDisplay() {
     bookmarkSettings.style.display = 'none';
   }
 }
-// Toggle settings being shown
+
 githubOption.addEventListener('click', calendarDisplay);
 function calendarDisplay() {
   if (calSettings.style.display === 'none') {
@@ -44,7 +44,7 @@ function calendarDisplay() {
     calSettings.style.display = 'none';
   }
 }
-// Toggle settings being shown
+
 weatherOption.addEventListener('click', weatherDisplay);
 function weatherDisplay() {
   if (weatherSettings.style.display === 'none') {
@@ -56,6 +56,7 @@ function weatherDisplay() {
     weatherSettings.style.display = 'none';
   }
 }
+
 // Get location for weather
 
 document.getElementById('submitWeather').addEventListener('click', () => {
