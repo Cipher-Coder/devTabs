@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.1.8
+
+## Changes
+
+#### Update DOMPurify Library
+
+Updated DOMPurify library. No other changes or updates
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.1.7
 
 ## Changes
@@ -214,7 +226,7 @@ Trying to get the [DEV](https://dev.to) feed to show up next to the [Twitter](ht
 
 The [DEV](https://dev.to) feed is not showing up when on [Twitter](https://twitter.com)
 
-- Updated permissions to include http://&#42;/ and https://&#42;/ - This was causing the DEV news feed on Twitter not to work. Once these permissions have been added in, everything worked again.
+- Updated permissions to include http://\*/ and https://\*/ - This was causing the DEV news feed on Twitter not to work. Once these permissions have been added in, everything worked again.
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
