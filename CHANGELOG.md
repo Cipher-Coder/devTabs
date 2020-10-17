@@ -8,7 +8,10 @@ Any notable changes and version notes will be kept in this file.
 
 #### Update DOMPurify Library
 
-Updated DOMPurify library. No other changes or updates
+- Updated DOMPurify to the latest release.
+- Adjusted CSS and HTML on main page to make it more responsive on smaller screens < 1300px
+- Moved the "Add Single Bookmark" button up and next to the options button so it would work on my MacBook Pro screen 1300px and not be off screen
+- Took out some of the rambling on the options page to shrink the writing so it all fits without running over other writing when bookmarks was open.
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
