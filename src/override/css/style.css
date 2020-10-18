@@ -383,6 +383,7 @@ li a:hover {
 }
 
 .singleDesc {
+  font-size: 0.75rem;
   color: orangered;
   cursor: pointer;
   margin-top: -5px;
@@ -475,4 +476,9 @@ label {
   .singleInput {
     margin-top: -15px;
   }
+}
+
+#siteLabel,
+#urlLabel {
+  font-size: 0.8rem;
 }
