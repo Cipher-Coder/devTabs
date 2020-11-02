@@ -1,42 +1,113 @@
 html {
   background-color: rgb(211, 207, 207);
-  font-family: Helvetica, "Ubuntu", Arial, sans-serif;
+  font-family: Helvetica, 'Ubuntu', Arial, sans-serif;
+  height: auto;
 }
 
 h1 {
   font-size: 2em;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: underline;
+.menu-title {
+  margin-left: 10px;
+  font-size: 1.2rem;
 }
 
-a:hover {
-  transition: all 0.2s ease-in;
-  color: #081163;
-}
-
-#mainPopup {
-  padding: 10px;
-}
-
-button {
-  margin-top: 5px;
-  margin-bottom: 15px;
+.btn {
+  position: relative;
+  display: block;
+  width: 150px;
+  margin: 10px 0;
   padding: 6px;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-button:hover {
-  background-color: #d8d2d2;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform-style: flat;
+  transition: all 250ms ease-out;
   cursor: pointer;
 }
 
-#displayQR {
+.btn:before,
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  transition: all 250ms ease-out;
+}
+
+.paper {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(128, 128, 128, 0.1) inset;
+  border-color: #dedede;
+}
+
+.raise-flatten {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.raise-flatten:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+}
+
+.raise-flatten:hover {
+  border-color: #dedede;
+}
+
+.raise-flatten:hover:before {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(128, 128, 128, 0.1) inset;
+}
+
+#responsiveView {
   text-align: center;
 }
 
-#qr-input {
-  text-align: center;
+input {
+  padding: 4px;
+}
+
+.menu-list {
+  margin-left: -30px;
+  margin-top: -1em;
+  list-style: none;
+  line-height: 1.5;
+}
+
+#open-settings {
+  cursor: pointer;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-link:hover {
+  color: #464545;
+}
+
+.menu-item {
+  font-size: 1.3em;
+  color: #000000;
+}
+
+.menu-item:hover {
+  color: #464545;
+}
+
+.qr-title {
+  font-size: 1.3em;
+}
+
+.qr-code-section {
+  margin: 5px 10px;
 }

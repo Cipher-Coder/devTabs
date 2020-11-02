@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.0
+
+## Changes
+
+#### HOTFIX - Github calendar stopped working
+
+- GitHub changed the way they rendered the calendar SVG and accompanying CSS
+- Added CSS Vars so the calendar days will render
+- Updated the Github-Calendar lib with newest release which fixed problem
+- Slight UI improvements
+  - Took out the settings cog and moved to a menu in the popup icon
+
 ## 2.1.8
 
 ## Changes
