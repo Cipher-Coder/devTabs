@@ -284,22 +284,6 @@ li a:hover {
   display: none;
 }
 
-#options {
-  -webkit-filter: brightness(70%);
-  -moz-filter: brightness(70%);
-  -o-filter: brightness(70%);
-  -ms-filter: brightness(70%);
-  filter: brightness(70%);
-}
-
-#options:hover {
-  -webkit-filter: brightness(100%);
-  -moz-filter: brightness(100%);
-  -o-filter: brightness(100%);
-  -ms-filter: brightness(100%);
-  filter: brightness(100%);
-}
-
 #devStart a:hover {
   color: greenyellow;
 }
@@ -468,11 +452,6 @@ label {
 
 .singleInput {
   display: inline-block;
-}
-
-.options-settings {
-  display: inline-block;
-  margin-right: 7px;
 }
 
 .add-bookmark-button {

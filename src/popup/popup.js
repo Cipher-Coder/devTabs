@@ -23,7 +23,5 @@ function getCurrentURL() {
 }
 
 document.getElementById('open-settings').addEventListener('click', () => {
-  chrome.tabs.create({ url: '/src/options/options.html' }, function (tab) {
-    tabId = tab.id;
-  });
+  chrome.runtime.openOptionsPage();
 });
