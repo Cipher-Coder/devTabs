@@ -13,6 +13,11 @@ Any notable changes and version notes will be kept in this file.
 - Updated the Github-Calendar lib with newest release which fixed problem
 - Slight UI improvements
   - Took out the settings cog and moved to a menu in the popup icon
+- Updated DOMPurify again
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
 
 ## 2.1.8
 
