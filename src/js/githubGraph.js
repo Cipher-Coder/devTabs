@@ -192,18 +192,11 @@ var _typeof2 =
                 '" target="blank">@' +
                 username +
                 '</a>';
-            options.cache = (options.cache || 24 * 60 * 60) * 1000;
 
             if (options.global_stats === false) {
               container.style.minHeight = '175px';
             }
 
-            var cacheKeys = {
-              content: 'gh_calendar_content.' + username,
-              expire_at: 'gh_calendar_expire.' + username,
-
-              // We need a proxy for CORS
-            };
             options.proxy =
               options.proxy ||
               function (username) {
@@ -217,26 +210,7 @@ var _typeof2 =
             options.getCalendar =
               options.getCalendar ||
               function (username) {
-                if (
-                  options.cache &&
-                  Date.now() < +localStorage.getItem(cacheKeys.expire_at)
-                ) {
-                  var content = localStorage.getItem(cacheKeys.content);
-                  if (content) {
-                    return Promise.resolve(content);
-                  }
-                }
-
-                return options.proxy(username).then(function (body) {
-                  if (options.cache) {
-                    localStorage.setItem(cacheKeys.content, body);
-                    localStorage.setItem(
-                      cacheKeys.expire_at,
-                      Date.now() + options.cache
-                    );
-                  }
-                  return body;
-                });
+                return options.proxy(username);
               };
 
             var fetchCalendar = function fetchCalendar() {

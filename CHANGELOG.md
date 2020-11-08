@@ -2,6 +2,18 @@
 
 Any notable changes and version notes will be kept in this file.
 
+## 2.2.1
+
+## Changes
+
+#### Cache adjustment
+
+- Took out the really long cache for the GitHub Graph
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.0
 
 ## Changes
