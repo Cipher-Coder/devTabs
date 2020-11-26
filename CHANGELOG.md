@@ -9,6 +9,7 @@ Any notable changes and version notes will be kept in this file.
 #### Cache adjustment
 
 - Took out the really long cache for the GitHub Graph
+- fixed rendering issue again - guessing GitHub keeps changing how it renders the graph
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
