@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2.2
+
+## Changes
+
+#### GitHub Streaks & Contributions
+
+- Fixed rendering issue with Streaks and Contributions... Again.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 Any notable changes and version notes will be kept in this file.
 
 ## 2.2.1
