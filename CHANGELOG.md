@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2.3
+
+## Changes
+
+#### GitHub Contributions Graph
+
+- Fixed rendering issue with with the GitHub Contributions Graph. GitHub keeps changing the way they render their Contributions SVG on their site which has thrown off the parsing lib. Hopefully I fixed it this time.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.2
 
 ## Changes
