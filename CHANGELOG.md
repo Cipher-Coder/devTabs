@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.2.4
+
+## Changes
+
+#### GitHub Streaks
+
+- The Streaks portion of the GitHub graph was not working. This will fix that.
+- Adjusted the CSS of the Graph to fit and look better.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## 2.2.3
 
 ## Changes
