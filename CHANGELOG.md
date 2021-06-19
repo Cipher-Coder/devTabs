@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.2.6
+
+## Changes
+
+#### Better onboarding
+
+- Better onboarding by adding links to the settings to setup the New Tab display and input accounts and bookmarks.
+
+> No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
+
+&nbsp;
+
 ## v2.2.5
 
 ## Changes
@@ -7,7 +19,6 @@
 #### DEV API update
 
 - DEV api has either changed or been updated and it was no longer fetching the latest articles and displaying them. The articles displayed were stale.
-
 - Updated the API call to pull the latest 20 articles and display them.
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
