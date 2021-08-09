@@ -8,6 +8,8 @@
 
 - Made it easier to access settings on first run. Reference [Issue #1](https://github.com/Cipher-Coder/chromeExtension/issues/1)
 - Added a Cache for the Github Graph - Too many requests are being sent. Sometimes a single person is aquiring a new tab > 20 times an hour. Since my self-hosted proxy is hosted on GCP the cost is increasing exponentially. Right now, it is set to cache the data for one hour. However, if this does not bring the cost back down to a managable range I will have to increase the time.
+- Fixed inject.js for Twitter portion. After Twitter UI update the CSS classes were not the same, so it was not triggering the the insertion of the [DEV](https://www.dev.to) box. Now it works when Twitter UI is set to dark mode.
+- Added link to Changelog in icon popup.
 
 > No other libs added or taken away. Only the original library's are being used. The list is at the end of this changelog.
 
